@@ -7,9 +7,38 @@
 <body>
 <a href="home.htm" onmouseover="alert('Click to go home page')">HOME</a>
 <br/>
+
 <script>
     document.write("Hello Cloud computing class!!!");
     console.log("This message for developer!!!");
+    /*
+    function sum_array(arr) 
+    {
+        //arr is an array data type
+        let total = 0;
+        for (let idx in arr)
+        {
+            total += arr[idx];
+        }
+        return total;
+    }
+    */
+    const numbers = [1, 2, 3, 4, 100];   
+    document.write("<br/> Total of array: " + numbers.reduce((a, b) => a + b, 0));
+
+    function while_count() 
+    {
+        let i=0;
+        let text = "<br/>";
+        while (i < 10) 
+        {
+            text += "while loop at : " + i + "<br/>";
+            i++;
+        }
+        document.write(text);
+    }
+    while_count();
+
 </script>
 </body>
 

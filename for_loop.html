@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang=“en”>
+<head>
+<meta charset=”UTF-8”>
+<title> Welcome to PHP for cloud app!</title>
+</head>
+<body>
+<a href="home.htm" onmouseover="alert('Click to go home page')">HOME</a>
+<br/>
+
+<p id="for_result"> This text will be replace</p>
+<button onclick="document.getElementById('for_result').innerText=test_for()">Test</button>
+<script>
+    function test_for() {
+        let text = "";
+        for (let i=0; i<=5; i++)
+        {
+            text += "This is the loop number " + i + <br/>;
+        }
+        return text;
+    }
+</script>
+</body>
+
+</html>
