@@ -1,0 +1,22 @@
+{
+  "name": "node_lab2",
+  "version": "1.0.0",
+  "description": "Cloud Computing LAB",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhtrantrong/NODE_LAB2.git"
+  },
+  "keywords": [
+    "lab"
+  ],
+  "author": "Minhtt21",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minhtrantrong/NODE_LAB2/issues"
+  },
+  "homepage": "https://github.com/minhtrantrong/NODE_LAB2#readme"
+}
