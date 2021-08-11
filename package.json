@@ -1,7 +1,7 @@
 {
   "name": "node_lab2",
   "version": "1.0.0",
-  "description": "Cloud Computing LAB",
+  "description": "Cloud computing lab",
   "main": "app.js",
   "scripts": {
     "start": "node app.js"
@@ -11,7 +11,8 @@
     "url": "git+https://github.com/minhtrantrong/NODE_LAB2.git"
   },
   "keywords": [
-    "lab"
+    "nodejs",
+    "cloudComputing"
   ],
   "author": "Minhtt21",
   "license": "ISC",
