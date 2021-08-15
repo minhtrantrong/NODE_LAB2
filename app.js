@@ -3,13 +3,8 @@ const Pool = require('pg').Pool;
 const { hostname } = require('os');
 const host = 'localhost';
 const port = process.env.PORT || 5000;
-const server = http.createServer((req, res) => 
-{
-    res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/plain');
-    res.end('Hello Cloud computing class!');
-});
 
+var query_data;
 const pg_conn = new Pool (
     {
         user: 'pcydnjhdsefoqv',
@@ -26,8 +21,18 @@ pg_conn.query("SELECT * FROM product", (error, results) =>
             return;
         }
         console.log(results.rows[0]);
+        query_data = results.rows[0]
     }
 );
+
+const server = http.createServer((req, res) => 
+{
+    res.statusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.write(query_data);
+    res.end('Hello Cloud computing class!');
+});
+
 server.listen(port, hostname, () => {
    console.log(`Server is running at ${port}`);
 })
